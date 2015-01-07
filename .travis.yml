@@ -5,7 +5,7 @@ rvm:
 #  - jruby
 gemfile:
   - Gemfile
-  #- gemfiles/activerecord31.gemfile
+  - gemfiles/activerecord31.gemfile
   #- gemfiles/activerecord32.gemfile
   #- gemfiles/activerecord40.gemfile
   #- gemfiles/activerecord41.gemfile
