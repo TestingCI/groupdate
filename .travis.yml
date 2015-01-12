@@ -17,4 +17,8 @@ before_script:
   - psql -c 'create database groupdate_test;' -U postgres
 
 
-#build_image: shippable/minv2:beta
+build_image: shippable/minv2:beta
+matrix:
+  allow_failures:
+    - rvm: jruby
+      gemfile: Gemfile
