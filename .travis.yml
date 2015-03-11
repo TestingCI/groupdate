@@ -20,7 +20,7 @@ before_script:
 #build_image: shippable/minv2:beta
 
 matrix:
-  include:
+  exclude:
     - rvm: 1.9.3
       gemfile: Gemfile
     - rvm: 1.9.3
