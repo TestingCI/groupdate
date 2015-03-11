@@ -3,14 +3,7 @@ language: ruby
 rvm:
   - 1.9.3
   - 2.1
-  - jruby
-
-gemfile:
-  - Gemfile
-  - gemfiles/activerecord31.gemfile
-  #- gemfiles/activerecord32.gemfile
-  #- gemfiles/activerecord40.gemfile
-  #- gemfiles/activerecord41.gemfile
+  
 script: bundle exec rake test
 
 before_script:
@@ -22,8 +15,8 @@ before_script:
 #build_image: shippable/minv2:beta
 
 matrix:
-  allow_failures:
-    - rvm: jruby
+  inlcude:
+    - rvm: 1.9.3
       gemfile: Gemfile
     - rvm: 1.9.3
       gemfile: gemfiles/activerecord31.gemfile
