@@ -23,5 +23,4 @@ matrix:
   exclude:
     - rvm: 1.9.3
       gemfile: Gemfile
-    - rvm: 1.9.3
-      gemfile: gemfiles/activerecord31.gemfile
+    
